@@ -14,20 +14,3 @@ export type UserProps = {
   verificationEmailSentAt?: Date;
   emailVerifiedAt?: Date;
 };
-
-
-export enum UserRoleEnum {
-  ADMIN = 'admin',
-  EDITOR = 'editor',
-  USER = 'user',
-}
-export type UserProps = {
-  username: string;
-  email: UserEmail;
-  password: UserPassword;
-
-  roles: UserRoleEnum[];
-
-  verificationEmailSentAt?: Date;
-  emailVerifiedAt?: Date;
-};
